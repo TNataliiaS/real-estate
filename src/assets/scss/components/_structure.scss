@@ -1,0 +1,17 @@
+.structure {
+    @extend %grid-columns;
+
+    &__item {
+        &:first-child {
+            grid-column: 1 / span 4;
+        }
+
+        &:nth-child(2) {
+            grid-column: 5 / span 4;
+        }
+
+        &:last-child {
+            grid-column: 9 / -1;
+        }
+    }
+}

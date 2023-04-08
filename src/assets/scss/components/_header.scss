@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    padding-top: 32px;
+
+    background-color: transparent;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    &__nav {
+        @extend %flex-align-center;
+        height: 55px;
+    }
+}

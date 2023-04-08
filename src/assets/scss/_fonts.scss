@@ -1,0 +1,12 @@
+@import "./mixins";
+
+@include font-face('Poppins', 'Poppins-Regular');
+@include font-face('Poppins', 'Poppins-Medium', 500);
+@include font-face('Poppins', 'Poppins-SemiBold', 600);
+@include font-face('Poppins', 'Poppins-Bold', 700);
+
+@include font-face('Rubik', 'Rubik-SemiBold', 600);
+
+@include font-face('Nunito Sans', 'NunitoSans-SemiBold', 600);
+
+@include font-face('DM Sans', 'DMSans-Medium', 500);

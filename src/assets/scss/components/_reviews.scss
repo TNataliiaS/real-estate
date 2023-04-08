@@ -1,0 +1,82 @@
+.reviews {
+    position: relative;
+
+    &__learn-more {
+        position: absolute;
+        top: 81px;
+        right: 2px;
+    }
+
+    &__list {
+        margin-top: 50px;
+    }
+
+    &__item {
+        padding: 78px 22px 24px 24px;
+
+        color: $content-title;
+
+        border: 1px solid #DEDCDA;
+
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 42px;
+            height: 34px;
+
+            background-image: url("../images/no-webp/quotes.png");
+
+            position: absolute;
+            top: 22px;
+            left: 22px;
+        }
+    }
+
+    &__blockquote {
+        margin: 0;
+    }
+
+    &__item-title {
+        margin-bottom: 18px;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__item-description {
+        margin-bottom: 25px;
+
+        line-height: 24px;
+    }
+
+    &__wrapper {
+        @extend %flex-align-center;
+    }
+
+    &__author-photo {
+        width: 48px;
+        height: 48px;
+        margin-right: 13px;
+    }
+
+    &__author-wrapper {
+        @extend %flex-column;
+
+        font-family: 'Nunito Sans', sans-serif;
+        letter-spacing: .5px;
+    }
+
+    &__author-name {
+        font-style: normal;
+        font-weight: 600;
+        color: #0B2E29;
+    }
+
+    &__author-profession {
+        font-size: 12px;
+        line-height: 22px;
+        color: #767676;
+    }
+}

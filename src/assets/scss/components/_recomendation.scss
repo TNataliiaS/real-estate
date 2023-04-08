@@ -1,0 +1,15 @@
+.recomendation {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 17px;
+        margin-bottom: 45px;
+    }
+
+    &__description {
+        width: 100%;
+        max-width: 490px;
+        margin: 0;
+    }
+}

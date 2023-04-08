@@ -1,0 +1,47 @@
+.social {
+    display: flex;
+
+    &__item {
+        &:not(:last-of-type) {
+            .social__link {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+        background: #F8F9F9;
+
+        position: relative;
+    }
+
+    &__icon {
+        fill: #29CDB5;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        &--inst {
+            width: 13px;
+            height: 13px;
+        }
+
+        &--youtube {
+            width: 14.5px;
+            height: 10.5px;
+        }
+
+        &--facebook {
+            width: 8px;
+            height: 14px;
+        }
+    }
+}

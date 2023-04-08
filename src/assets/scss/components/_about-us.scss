@@ -1,0 +1,123 @@
+.about-us {
+    display: flex;
+    padding-top: 96px;
+
+    &__visual {
+        flex-shrink: 0;
+        width: 609px;
+        height: 475px;
+        margin-right: 56px;
+
+        position: relative;
+    }
+
+    &__rating {
+        padding: 32px;
+
+        text-align: center;
+
+        background-color: $primary-color;
+        box-shadow: 35px 35px 65px rgba(146, 106, 120, 0.16);
+
+        position: absolute;
+        top: -80px;
+        left: 97px;
+        z-index: 2;
+    }
+
+    &__rating-wrapper {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 27px;
+            height: 27px;
+
+            background-image: url('../images/tick-square.svg');
+
+            position: absolute;
+            top: -45px;
+            left: 50%;
+
+            transform: translateX(-50%);
+        }
+    }
+
+    &__rating-num {
+        display: inline-block;
+        margin-bottom: 7px;
+
+        font-size: 72px;
+        line-height: 80px;
+        color: $content-title-second;
+    }
+
+    &__rating-star {
+        margin-bottom: 10px;
+    }
+
+    &__star {
+        width: 18px;
+        height: 18px;
+        fill: $accent-color;
+    }
+
+    &__rating-trust {
+        line-height: 1.5;
+        color: $light-content;
+    }
+
+    &__rating-reviews {
+        line-height: 1.5;
+        color: $content-title-second;
+    }
+
+    &__info {
+        padding: 12px 32px;
+
+        background-color: #fff;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    &__info-wrapper {
+        display: flex;
+    }
+
+    &__info-text {
+        display: flex;
+
+        color: $light-content;
+
+        &:not(:last-of-type) {
+            margin-right: 37px;
+        }
+    }
+
+    &__info-span {
+        margin-right: 9px;
+
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        color: $content-title-second;
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__content {
+        padding-top: 36px;
+    }
+
+    &__description {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 16px;
+        margin-bottom: 48px;
+    }
+}

@@ -1,0 +1,107 @@
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+
+    position: relative;
+    z-index: 2;
+
+    &__label {
+        display: block;
+        padding: 12px 32px;
+
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        color: $light-content;
+
+        cursor: pointer;
+        order: 1;
+
+        transition: all ease 0.2s;
+    }
+
+    &__item {
+        width: 100%;
+        display: none;
+        padding: 32px;
+
+        background: $primary-color;
+        order: 2;
+    }
+
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & input[type="radio"]:checked+label {
+        background: $primary-color;
+
+        color: $accent-color;
+    }
+
+    & input[type="radio"]:checked+label+.tabs__item {
+        display: flex;
+    }
+
+    &__dl {
+        margin: 0;
+        display: flex;
+    }
+
+    &__dl-item {
+        &:not(:last-of-type) {
+            margin-right: 40px;
+        }
+    }
+
+    &__dt {
+        margin-bottom: 8px;
+
+        font-size: 18px;
+        color: $content-title;
+    }
+
+    &__dd {
+        margin: 0;
+    }
+
+    &__select-wrapper {
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 10px;
+
+            position: absolute;
+            top: 50%;
+            right: 4px;
+            transform: translateY(-50%);
+
+            background-image: url('../images/arrow-select.svg');
+
+            pointer-events: none;
+        }
+    }
+
+    &__select {
+        padding-right: 32px;
+
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.0025em;
+        color: $light-content;
+
+        border: 0;
+        background-color: transparent;
+        outline: none;
+        appearance: none;
+        cursor: pointer;
+    }
+
+    &__btn {
+        margin-left: auto;
+    }
+}
